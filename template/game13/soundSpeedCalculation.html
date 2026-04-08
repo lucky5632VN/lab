@@ -1,0 +1,6 @@
+<div class="appHeader pointerEvents" t-hidden="hideHeader"><div class="icon"></div><h2>[% trans(headerTextId) %]</h2><div class="menu button" data-click="pad.view.apps" t-hidden="hideAppsButton">[% trans('mainMenuBtnPad') %]</div></div><div class="appContentWrapper pointerEvents"><img t-src="[% getImagePathByAssetId('testBackground2') %]" /><div class="soundSpeedCalculationWrapper"><div class="calculatonWrapper"><div class="leftWrapper"><input class="center distanceInput" type="text" maxlength="1" /> m
+            <div class="seperator"></div><input class="center soundSpeedInput" type="text" maxlength="1" /> 1/1000 s
+        </div><div class="equalSign">=</div><div class="rightWrapper"><input class="center resultInput" type="text" maxlength="3" disabled="disabeld" /> m/s
+        </div></div><div class="calculationNotice">
+        [% trans('calculationNotice') %]
+    </div></div><div class="button checkAnswer">[% trans('calculateButton') %]</div></div>

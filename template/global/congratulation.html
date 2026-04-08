@@ -1,0 +1,21 @@
+<div id="summaryArch">
+    <img src="img/pad/summary/strahl.png" class="rotating radiant" />
+</div>
+<div id="congratulationPhrase" class="shadow">[% trans('summaryCongratulation') %]</div>
+<div id="congratulationText">
+    [% text|html %]
+</div>
+<div id="firework"></div>
+<ul id="congratulationBadges">
+    <li t-for="achievements" class="achievement sensitive">
+        <img class="image" t-src="img/pad/achievements/[% _item %]_large.png">
+        <div class="label">[% trans(_item + 'AchievementLabel')|html %]</div>
+        <div class="desc">[% trans(_item + 'AchievementDesc') %]</div>
+    </li>
+</ul>
+<div id="extraButton" class="button sensitive dispatch-click-event [% extraButton.class %]" t-hidden="isNot(extraButton)" data-click="pad.extraButton" data-event="[% extraButton.event %]">
+    [% trans(extraButton.textKey) %]
+</div>
+<div id="toScore" class="button sensitive" data-click="pad.view.score">
+    [% trans('summaryToPoints') %]
+</div>

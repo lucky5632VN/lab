@@ -1,0 +1,84 @@
+{
+    "preload": {
+        "newTeaser"        : "img/_languages/vi/start/new_teaser.png",
+        "billboardGame"    : "img/_languages/vi/start/billboard_game.png",
+        "billboardLab"     : "img/_languages/vi/start/billboard_lab.png",
+        "game1Board"       : "img/_languages/vi/start/flur_tafel1.png",
+        "game2Board"       : "img/_languages/vi/start/flur_tafel2.png",
+        "game3Board"       : "img/_languages/vi/start/flur_tafel3.png",
+        "game4Board"       : "img/_languages/vi/start/flur_tafel4.png",
+        "game5Board"       : "img/_languages/vi/start/flur_tafel5.png",
+        "game6Board"       : "img/_languages/vi/start/flur_tafel6.png",
+        "game7Board"       : "img/_languages/vi/start/flur_tafel7.png",
+        "game8Board"       : "img/_languages/vi/start/flur_tafel8.png",
+        "game9Board"       : "img/_languages/vi/start/flur_tafel9.png",
+        "game10Board"      : "img/_languages/vi/start/flur_tafel10.png",
+        "game11Board"      : "img/_languages/vi/start/flur_tafel11.png",
+        "game12Board"      : "img/_languages/vi/start/flur_tafel12.png",
+        "game13Board"      : "img/_languages/vi/start/flur_tafel13.png",
+        "game14Board"      : "img/_languages/vi/start/flur_tafel14.png",
+        "loungeBackground" : "img/_languages/vi/start/foyer.png",
+        "lockRulesWall"    : "img/_languages/vi/start/schleuse_plakat.png",
+        "lockRules"        : "img/_languages/vi/start/schleuse_plakat2.png",
+        "lockDoor"         : "img/_languages/vi/start/schleuse_tuer.png"
+    },
+
+    "audioSprites": {
+        "doctor": {"corridor1":[0,7040],"corridor2":[7540,5355],"corridor3":[13394,6443],"corridorHelp":[20337,6294],"introGame":[27130,5483],"lock1":[33113,8619],"lock2":[42232,7937],"lock3":[50668,4544],"lockHelp":[55712,5654],"lockReady":[61865,5995],"lounge1":[68360,7190],"lounge2":[76049,9920],"lounge3":[86469,6955],"lounge7":[93924,7467],"refreshRules":[101890,12694],"rules1":[115084,10454],"rules2":[126037,11307],"rules3":[137844,9878],"rules4":[148221,9846],"selection1":[158566,3627],"selection2":[162693,4000],"selection3":[167193,2774],"selection4":[170466,3627],"selection5":[174593,1814],"selectionGame12":[176906,1750]}
+    },
+
+    "lipData": {"corridor3":[1,3,1,2,6,3,1,0,1,0,0,5,1,4,5,1,2,0,3,6,5,6,3,4,5,1,2,6,4,2,4,1,0],"corridor2":[0,1,3,1,4,3,1,0,1,4,6,1,2,4,2,1,2,0,2,1,2,1,6,1,3,2,0],"corridor1":[0,2,1,5,4,3,5,2,1,5,1,2,3,0,0,1,5,3,2,4,2,1,6,1,0,2,6,3,1,4,5,1,3,5,0,0],"rules1":[0,0,0,1,2,3,4,1,0,1,2,3,1,2,1,5,1,0,0,2,3,4,1,0,0,2,6,2,3,4,2,4,2,6,2,0,1,2,5,4,5,0,0,3,0,2,3,2,1,2,3,0,0],"lounge7":[0,0,3,2,1,2,0,0,0,0,0,6,2,1,2,3,4,1,2,4,2,0,0,0,0,2,1,2,0,4,1,2,1,0,1,3,0,0],"rules2":[0,4,2,1,2,1,2,1,3,2,0,3,1,2,1,3,2,1,4,0,0,0,2,1,2,3,2,4,3,1,4,1,0,0,4,1,2,3,5,4,3,1,2,1,5,2,4,2,4,1,6,1,2,1,2,0,0],"lounge1":[0,0,2,1,3,1,0,0,3,1,2,1,6,1,0,0,0,0,3,5,3,1,5,6,2,3,1,2,1,2,0,1,4,2,1,0],"rules4":[0,2,1,4,0,0,1,2,1,3,1,2,1,2,1,2,3,1,0,0,1,2,3,1,0,2,3,2,1,2,3,4,3,2,3,1,0,2,3,6,2,4,1,2,1,6,3,2,0,0],"lounge3":[0,3,4,3,4,0,0,2,3,1,2,3,6,0,0,1,2,4,5,3,1,4,2,1,3,2,0,0,1,2,1,2,3,1,0],"lounge2":[0,0,3,2,0,0,2,6,2,6,4,3,1,3,4,2,1,2,1,3,1,0,0,1,2,3,0,1,3,1,2,1,2,1,2,0,1,2,1,2,3,1,2,3,4,2,1,0,0,0],"introGame":[0,0,5,6,4,6,1,0,0,4,5,1,3,2,3,2,4,3,2,3,4,3,1,4,2,1,4,0],"selection4":[0,0,2,1,2,0,0,0,6,1,2,3,0,1,2,1,2,0,0],"selection5":[1,6,0,4,0,0,1,6,1,2],"corridorHelp":[0,4,5,3,1,6,1,3,0,0,0,2,6,1,2,3,2,1,5,1,4,1,6,2,4,1,0,0,4,3,1,0],"selection1":[0,3,2,0,6,5,2,0,0,0,5,3,6,1,2,5,4,3,0],"selection2":[0,0,6,5,3,0,0,0,1,5,4,3,1,2,4,3,5,4,5,0],"selection3":[0,0,6,1,3,0,3,6,3,2,1,2,3,0],"lockHelp":[0,4,1,2,0,0,0,0,3,4,0,5,4,6,3,1,0,5,0,5,6,1,3,4,2,3,1,0,0],"lock2":[0,0,3,2,3,4,6,3,5,6,2,1,2,3,4,3,5,2,1,2,1,5,2,1,3,0,0,0,1,5,1,2,5,3,4,1,6,4,0,0],"lock3":[0,0,6,4,5,0,0,0,6,5,0,2,1,2,3,0,1,2,3,1,2,4,1],"lock1":[0,0,3,1,2,0,0,0,2,3,4,1,6,0,1,2,6,1,5,1,2,6,0,0,2,1,6,3,1,2,0,3,2,3,5,6,5,1,5,3,4,5,0,0],"refreshRules":[1,4,5,1,4,0,3,6,1,5,2,1,2,1,0,1,2,5,2,1,3,1,2,0,0,5,1,2,0,3,2,0,1,5,1,2,3,2,3,2,0,0,0,0,1,2,6,1,0,3,2,1,2,0,0,0,1,6,1,6,1,2,1,0],"lockReady":[0,0,1,5,0,0,2,6,3,2,3,1,0,0,0,0,1,2,3,0,0,2,1,6,0,6,0,5,0,0],"rules3":[0,0,2,3,4,1,2,1,2,0,0,0,2,3,1,2,1,2,1,6,3,4,3,2,1,2,1,0,2,6,3,2,5,1,3,6,4,2,1,2,0,3,1,2,1,2,1,2,0,0],"selectionGame12":[0,0,0,6,0,1,2,1,0]},
+
+    "text": {
+        "lounge1": "Xin chào, chú là Tiến sĩ Bong Bóng. Chào mừng bé đến với phòng thí nghiệm của chú. Xin mời vào!",
+        "lounge2": "Ở đây, bé có thể thực hiện thí nghiệm giống như trong phòng thí nghiệm thật – chỉ khác là bây giờ bé làm trên máy tính, hay thường gọi là trong thế giới ảo.",
+        "lounge3": "Các cánh cửa này dẫn thẳng vào phòng thí nghiệm. Chú đã chuẩn bị mọi thứ cho bé ở đó. Chúng ta cùng bắt đầu nào!",
+        "lounge7": "Bé muốn làm gì? Tự mình thực hiện các thí nghiệm trong phòng thí nghiệm? Vậy hãy nhấp chuột vào khóa để mở cửa thôi.",
+        "introGame": "Bước qua cửa là bạn có thể cùng mình du hành đến xứ Microscopia rồi!",
+        "lock1": "Đợi đã! Trước khi bắt đầu thí nghiệm, chúng ta phải trang bị bảo hộ. An toàn và gọn gàng là điều vô cùng quan trọng trong phòng thí nghiệm!",
+        "lock2": "Bạn đã biết mình cần trang bị những gì nếu muốn làm việc trong phòng thí nghiệm hay chưa? Hãy nhấp chuột vào những món đồ phù hợp.",
+        "lockHelp": "Gợi ý: Bạn cần một thứ để bảo vệ đôi mắt và một thứ nữa để không làm bẩn quần áo.",
+        "lock3": "Tuyệt vời! Bây giờ hãy đọc các quy tắc làm việc trong phòng thí nghiệm nhé!",
+        "rules1": "Trong phòng thí nghiệm, chúng ta nên di chuyển cẩn thận và chậm rãi. Vì chúng ta không muốn làm đổ vỡ đồ đạc có thể gây nguy hiểm, nhất là khi làm việc với hóa chất.",
+        "rules2": "Chú sẽ giúp các bạn làm các thí nghiệm và giải thích các nhiệm vụ cho từng bạn. Vậy nên các bạn phải chăm chú lắng nghe! Nhưng cũng đừng quá lo lắng nhé: chú sẵn lòng giúp đỡ bất kỳ lúc nào bé cần.",
+        "rules3": "Đây là một nhiệm vụ dễ dàng: Hãy đảm bảo phòng làm việc của bạn luôn ngăn nắp trong suốt thí nghiệm. Nếu bạn không cần dùng đến vật dụng nào đó nữa thì phải cất nó đi ngay.",
+        "rules4": "Và đừng quên: Bạn không được ăn hoặc uống trong phòng thí nghiệm. Quy tắc này là để đảm bảo bạn không uống nhầm hóa chất, hay cầm nắm đồ ăn khi tay bị bẩn nhé.",
+        "refreshRules": "Bé đã biết các quy tắc an toàn trong phòng thí nghiệm rồi đấy. Chú có nên nhắc lại lần nữa không? Nếu có thì hãy nhấp chuột vào biểu tượng của chú một lần nữa….hoặc chúng ta có thể bắt tay ngay vào thí nghiệm? Nhấp chuột để mở khóa nhé.",
+        "lockReady": "Được rồi, bạn biết phải làm gì rồi, cùng bắt tay vào thực hiện thí nghiệm thôi!",
+        "corridor1": "Mỗi cánh cửa dẫn đến một phòng thí nghiệm đặc biệt. Tấm bảng cạnh cửa cho biết chủ đề nào đang được nghiên cứu ở đây.",
+        "corridor2": "Hãy nhấp vào mũi tên để di chuyển dọc theo hành lang và vào các phòng thí nghiệm khác nhau.",
+        "corridor3": "Bạn cứ tự nhiên quan sát. Phía sau mỗi cánh cửa là một chuyên ngành nghiên cứu hấp dẫn và mới lạ!",
+        "corridorHelp": "Nếu muốn bắt đầu một thí nghiệm, bạn hãy nhấp chuột vào cánh cửa của phòng thí nghiệm mà bạn muốn vào. Đi nào!",
+        "selection1": "Lựa chọn thông minh đấy! Chú đặc biệt thích thí nghiệm này!",
+        "selection2": "Tuyệt vời! Đây là một trong những thí nghiệm yêu thích của chú!",
+        "selection3": "Ở đây có hàng tỷ điều thú vị để khám phá!",
+        "selection4": "Quá tuyệt! Đây là một thí nghiệm thực sự thú vị.",
+        "selection5": "Rất tốt! Bắt đầu nào!",
+        "selectionGame12": "Lựa chọn tuyệt vời!"
+    },
+
+    "highlightRule": {
+        "height": 140
+    },
+
+    "animations": {
+        "lockExplainRules": [
+            { },
+            { },
+            { },
+            { "function": "highlightRule.setPosition", "args": [335, 106] },
+            { },
+            { },
+            { },
+            { "function": "highlightRule.setPosition", "args": [45, 252] },
+            { },
+            { },
+            { },
+            { "function": "highlightRule.setPosition", "args": [45, 389] },
+            { },
+            { },
+            { },
+            { "function": "highlightRule.setPosition", "args": [335, 261] }
+        ]
+    }
+}

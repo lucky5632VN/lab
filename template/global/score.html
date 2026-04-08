@@ -1,0 +1,76 @@
+<div class="summaryHeader">
+    <h3>[% trans(titleKey) %]</h3>
+</div>
+<ul id="scoreList">
+    <li id="experimentPoints" class="scoreEntry[% classes(progress.points.experiment, ' active') %]">
+        <div class="label">
+            [% trans('summaryExperimentLabel') %]
+        </div>
+        <div class="points latinFont">[% progress.points.experiment|format() %]</div>
+    </li>
+    <li id="clearBenchPoints" class="scoreEntry[% classes(progress.points.clearBench, ' active') %]">
+        <div class="label">
+            [% trans('summaryCleanLabel') %]
+        </div>
+        <div class="points latinFont">[% progress.points.clearBench|format() %]</div>
+    </li>
+    <li id="testPoints" class="scoreEntry[% classes(progress.points.test, ' active') %]">
+        <div class="label">
+            [% trans('summaryExperttestLabel') %]
+        </div>
+        <div class="points latinFont">[% progress.points.test|format() %]</div>
+    </li>
+    <li id="achievmentPoints" class="scoreEntry[% classes(progress.points.achievements, ' active') %]">
+        <div class="label">
+            [% trans('summaryAchievementsLabel') %]
+        </div>
+        <div class="points latinFont">[% progress.points.achievements|format() %]</div>
+        <ul id="scoreAchievements" class="count-[% count(progress.achievements) %]">
+            <li t-for="progress.achievements" class="achievement">
+                <img class="image" t-src="img/pad/achievements/[% _item %]_large.png">
+            </li>
+        </ul>
+    </li>
+</ul>
+<div id="entireScoreWrapper">
+    <div id="entireScore">
+        [% trans('summaryAllPoints') %]&nbsp;<span id="researchPoints" class="bold latinFont">[% progress.points.total %]</span>
+        <br />
+        <span id="printDiplomaButton" class="sensitive button" t-hidden="hide.printDiploma" data-click="pad.view.printDiploma">
+            [% trans('summaryPrintExpertDiploma') %]
+        </span>
+        <span id="startTestButton" class="sensitive button" t-hidden="hide.startTest" data-click="pad.view.test">
+            [% trans('summaryToExperttest') %]
+        </span>
+        <span id="backToCorridorButton" class="sensitive button" t-hidden="hide.backToCorridor" data-click="exitGame">
+            [% trans('summaryToLabs') %]
+        </span>
+        <span id="closeWindowButton" class="sensitive button" t-hidden="hide.close" data-click="pad.view.tests">
+            [% trans('summaryFinish') %]
+        </span>
+    </div>
+    <div id="crushNextLevel" class="[% classes(progress.crush.levelUnlocked, 'success') %]">
+        <div id="nextLevelProgress" t-hidden="progress.crush.levelUnlocked">
+            <div class="info shadow">
+                <span id="pointsUntilNextLevel">[% progress.crush.nextLevelText|format() %]</span>
+            </div>
+            <div class="levelStar">
+                <div class="points center bold">[% progress.crush.pointsForLevel %]</div>
+            </div>
+            <div class="progressBar">
+                <div class="progress" t-style="width: [% percentageUntilNextLevel %]%"></div>
+            </div>
+        </div>
+        <div id="nextLevelSuccess" t-hidden="isNot(progress.crush.levelUnlocked)">
+            <div class="info shadow">
+                [% trans(progress.crush.successTextKey)|html() %]
+            </div>
+            <div class="levelStar">
+                <div class="points center bold">[% progress.crush.pointsForLevel %]</div>
+            </div>
+            <div class="button crushButton sensitive" data-click="pad.startCrush">
+                [% trans('summaryPlayNow') %]
+            </div>
+        </div>
+    </div>
+</div>

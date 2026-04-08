@@ -1,0 +1,7 @@
+<ul class="shelfDropList">
+    <li t-for="dropItems" class="dropItem [% classesByProp(_item, 'complete', 'droppedOnce') %]">
+        <div class="itemImage" t-style="background-image: url('[% _item.src %]')"></div>
+        <div class="itemCount" t-hidden="equals(_item.toDrop, 1)">[% _item.dropped %]</div>
+        <div class="itemLabel">[% _item.label %]</div>
+    </li>
+</ul>

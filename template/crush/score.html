@@ -1,0 +1,56 @@
+<div id="crushSummaryLevel" class="[% classes(success, 'rotating-after') %]">
+    <div class="levelTitle shadow absolute [% classes(bonus, 'bonus') %]">
+        [% trans(levelTextKey) %]
+    </div>
+    <div class="crushCircle bold level center shadow [% classes(bonus, 'bonus', success, 'success') %]">
+        [% levelNumber %]
+    </div>
+    <div class="levelState shadow absolute [% classes(success, 'successful') %]">
+        [% trans(stateTextKey)|html %]
+    </div>
+
+    <div class="rewardStarBig absolute [% classes(star1, 'active') %]" t-hidden="bonus || !success" ></div>
+    <div class="rewardStarBig absolute [% classes(star2, 'active') %]" t-hidden="bonus || !success"></div>
+    <div class="rewardStarBig absolute [% classes(star3, 'active') %]" t-hidden="bonus || !success"></div>
+
+    <div class="unsuccessfulMessage center" t-if="!success">
+        [% trans('crushLevelMiss') %]
+    </div>
+</div>
+<div class="crushSummaryBar"></div>
+<div id="crushSummaryLevelBar" class="[% classes(bonus && success, 'bonus') %]"></div>
+<div class="bonusMessage" t-if="success && bonus">
+    [% trans('getBonusLevel') %]
+</div>
+
+<div class="crushCircle seconds active" title="[% trans('crushTime') %]" t-hidden="bonus && success">
+    <div class="finishTerm bold center">[% seconds %]</div>
+</div>
+<div class="crushCircle moves active" title="[% trans('crushRounds') %]" t-hidden="bonus && success">
+    <div class="finishTerm bold center">[% moves %]</div>
+</div>
+<div class="crushCircle points active" title="[% trans('crushPoints') %]" t-hidden="bonus && success">
+    <div class="finishTerm bold center">[% points|format() %]</div>
+</div>
+
+<div id="successfulButtonsBonus" t-if="success && bonus">
+    <div class="button crushButton absolute sensitive" data-click="pad.view.crushWorld">
+        [% trans('crushNext') %]
+    </div>
+</div>
+<div id="successfulButtons" t-if="success && !bonus">
+    <div class="button crushButton absolute sensitive" data-click="pad.replayCrushLevel">
+        [% trans('crushPlayAgain') %]
+    </div>
+    <div class="button crushButton absolute sensitive" data-click="pad.view.crushWorld">
+        [% trans('crushNext') %]
+    </div>
+</div>
+<div id="unsuccessfulButtons" t-hidden="success">
+    <div class="button crushButton absolute sensitive" data-click="pad.view.crushWorld">
+        [% trans('crushBack') %]
+    </div>
+    <div class="button crushButton absolute sensitive" data-click="pad.replayCrushLevel">
+        [% trans('crushPlayAgain') %]
+    </div>
+</div>

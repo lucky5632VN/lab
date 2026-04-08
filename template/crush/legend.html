@@ -1,0 +1,42 @@
+<div class="crushSummaryBar"></div>
+
+<div class="crushCircle seconds [% classes(finishTerms.seconds, 'active') %]" title="[% trans('crushTime') %]">
+    <div class="finishTerm bold center">[% finishTerms.seconds %]</div>
+</div>
+<div class="crushCircle moves [% classes(finishTerms.moves, 'active') %]" title="[% trans('crushRounds') %]">
+    <div class="finishTerm bold center">[% finishTerms.moves %]</div>
+</div>
+<div class="crushCircle points [% classes(finishTerms.points, 'active') %]" title="[% trans('crushPoints') %]">
+    <div class="finishTerm bold center">[% finishTerms.points %]</div>
+</div>
+
+<div id="crushLevelWrapper">
+    <div class="levelTitle shadow absolute [% classes(bonusLevel, 'bonus') %]">
+        [% trans(levelLabelKey) %]
+    </div>
+    <div class="crushCircle bold level center shadow [% classes(bonusLevel, 'bonus') %]">
+        [% levelNo %]
+    </div>
+    <div class="rewardStarSmall absolute [% classes(star1, 'active') %]" t-hidden="bonusLevel"></div>
+    <div class="rewardStarSmall absolute [% classes(star2, 'active') %]" t-hidden="bonusLevel"></div>
+    <div class="rewardStarSmall absolute [% classes(star3, 'active') %]" t-hidden="bonusLevel"></div>
+</div>
+<div id="crushLevelDescriptionWrapper">
+    <div id="crushLevelDescription">[% trans(level.desc)|html() %]</div>
+    <div class="specialStone floatLeft" id="destroyTypeSummary">
+        <span class="count">[% level.destroyTypeCount %]x</span>
+    </div>
+    <div class="specialStone floatLeft" id="swapAxesSummary">
+        <span class="count">[% level.swapAxesCount %]x</span>
+    </div>
+    <div id="specialStoneDesc" t-hidden="isTruthy(levelKey)">
+        <p>[% trans('crushHelpSieve') %]</p>
+        <p>[% trans('crushHelpGlasTab') %]</p>
+    </div>
+</div>
+<div class="button crushButton absolute sensitive" data-click="pad.view.crushWorld">
+    [% trans('crushBack') %]
+</div>
+<div class="button crushButton absolute sensitive" data-click="pad.playCrushLevel">
+    [% trans('crushPlay') %]
+</div>

@@ -1,0 +1,23 @@
+<div class="summaryHeader">
+    <img t-src="[% getPadImagePath(bundleId + '_illu.png') %]" class="gamePadIllu" />
+    <h3>[% trans(titleKey) %]</h3>
+</div>
+<div class="summaryContent" class="diploma">
+    <div id="miniDiploma">
+        <div class="header center captionFont">
+            [% trans('diploma') %]
+        </div>
+        <img t-src="[% getPadImagePath(bundleId + '_finish.png') %]" class="overlay" />
+        <input id="diplomaInput" type="text" placeholder="[% trans('summaryDiplomaInput') %]"
+            class="sensitive center" maxlength="25" />
+    </div>
+
+    <br />
+
+    <div class="sensitive button" data-click="pad.printDiploma">
+        [% trans('summaryPrintDiploma') %]
+    </div>
+    <div class="sensitive button" data-click="pad.view.score">
+        [% trans('summaryReady') %]
+    </div>
+</div>

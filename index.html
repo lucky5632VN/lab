@@ -1,0 +1,1474 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <base href="/" />
+    <title>Hệ thống Thí nghiệm | A1K50</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <meta
+      name="description"
+      content="Hệ thống thí nghiệm mô phỏng độc quyền."
+    />
+    <meta name="robots" content="index,follow" />
+    <meta name="og:title" content="Hệ thống Thí nghiệm | A1K50" />
+    <meta
+      name="og:description"
+      content="Hệ thống thí nghiệm mô phỏng độc quyền."
+    />
+    <link
+      rel="shortcut icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧪</text></svg>"
+      type="image/x-icon"
+    />
+    <link rel="canonical" href="https://thinghiemvui.basf.com/" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/dist/style.87872fff379c27398189.css"
+    />
+    <link
+      rel="preload"
+      href="assets/dist/styleDeferred.caeadafbb497ec211610.css"
+      as="style"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
+    />
+    <link
+      rel="preload"
+      href="assets/dist/cookieBanner2.0418dfa3d675811a4be3.css"
+      as="style"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
+    />
+    <link
+      rel="preload"
+      href="assets/dist/vi.c6773a487e87659c2ddd.css"
+      as="style"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
+    />
+    <script
+      type="text/javascript"
+      data-kids-cb='{"category": "statistics", "cookies": ["_pk_ses", "_pk_id"]}'
+    >
+      var _paq = _paq || [];
+      _paq.push([
+        "setDomains",
+        [
+          "*.basf.kids-interactive.de",
+          "*.basf-asia-en.kids-interactive.de",
+          "*.basf-tw.kids-interactive.de",
+          "*.basf-jp.kids-interactive.de",
+          "*.basf-es.kids-interactive.de",
+          "*.basf-simple.kids-interactive.de",
+          "*.thinghiemvui.basf.com",
+          "*.virtualkidslab.basf.com",
+          "*.www.kidslabthailand.com",
+        ],
+      ]);
+      _paq.push(["disableCookies"]);
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+      (function () {
+        var u = "//basf-matomo.kids-interactive.de/";
+        _paq.push(["setTrackerUrl", u + "piwik.php"]);
+        _paq.push(["setSiteId", 29]);
+        var d = document,
+          g = d.createElement("script"),
+          s = d.getElementsByTagName("script")[0];
+        g.type = "text/javascript";
+        g.defer = true;
+        g.src = u + "piwik.js";
+        s.parentNode.insertBefore(g, s);
+      })();
+    </script>
+    <style>
+      /* === PHẦN NGOÀI: Nền Công Nghệ Không Gian === */
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #010b1a !important;
+        background-image:
+          /* Lưới Matrix xanh Cyan */
+          linear-gradient(rgba(0, 242, 254, 0.07) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(0, 242, 254, 0.07) 1px, transparent 1px),
+          /* Gradient vũ trụ đậm */
+          radial-gradient(ellipse at 20% 50%, rgba(0, 80, 180, 0.15) 0%, transparent 60%),
+          radial-gradient(ellipse at 80% 20%, rgba(0, 200, 255, 0.1) 0%, transparent 50%),
+          radial-gradient(circle at 50% 100%, #040d1f 0%, #010b1a 70%) !important;
+        background-size: 50px 50px, 50px 50px, 100% 100%, 100% 100%, 100% 100% !important;
+        background-attachment: fixed !important;
+        animation: gridScroll 20s linear infinite !important;
+        overflow: hidden;
+      }
+
+      @keyframes gridScroll {
+        from { background-position: 0 0, 0 0, 0 0, 0 0, 0 0; }
+        to   { background-position: 50px 50px, 0 0, 0 0, 0 0, 0 0; }
+      }
+
+      /* Các ngôi sao nhấp nháy floating */
+      body::before {
+        content: '';
+        position: fixed;
+        inset: 0;
+        background-image:
+          radial-gradient(1px 1px at 15% 20%, rgba(255,255,255,0.9) 0%, transparent 100%),
+          radial-gradient(1.5px 1.5px at 70% 10%, rgba(0,242,254,0.7) 0%, transparent 100%),
+          radial-gradient(1px 1px at 40% 80%, rgba(255,255,255,0.8) 0%, transparent 100%),
+          radial-gradient(2px 2px at 85% 65%, rgba(0,242,254,0.5) 0%, transparent 100%),
+          radial-gradient(1px 1px at 55% 45%, rgba(255,255,255,0.6) 0%, transparent 100%),
+          radial-gradient(1.5px 1.5px at 25% 90%, rgba(100,200,255,0.7) 0%, transparent 100%),
+          radial-gradient(1px 1px at 92% 35%, rgba(255,255,255,0.9) 0%, transparent 100%),
+          radial-gradient(1px 1px at 5% 55%, rgba(0,242,254,0.8) 0%, transparent 100%);
+        pointer-events: none;
+        z-index: 0;
+        animation: starTwinkle 4s ease-in-out infinite alternate;
+      }
+
+      @keyframes starTwinkle {
+        from { opacity: 0.6; }
+        to   { opacity: 1; }
+      }
+
+      /* === KHUNG VIỀN: Neon Hologram phát sáng === */
+      #page-wrapper {
+        position: relative;
+        z-index: 2;
+      }
+      #wrapper {
+        position: relative;
+        border: 2px solid #00f2fe !important;
+        border-radius: 16px !important;
+        box-shadow:
+          0 0 8px rgba(0, 242, 254, 0.8),
+          0 0 20px rgba(0, 242, 254, 0.5),
+          0 0 40px rgba(0, 242, 254, 0.25),
+          inset 0 0 8px rgba(0, 242, 254, 0.05) !important;
+        animation: borderPulse 3s ease-in-out infinite alternate !important;
+        overflow: hidden;
+      }
+
+      @keyframes borderPulse {
+        from { box-shadow: 0 0 8px rgba(0,242,254,0.8), 0 0 20px rgba(0,242,254,0.5), 0 0 40px rgba(0,242,254,0.25); }
+        to   { box-shadow: 0 0 12px rgba(0,242,254,1), 0 0 30px rgba(0,242,254,0.7), 0 0 60px rgba(0,242,254,0.4); }
+      }
+
+      /* Nội dung game: giữ nguyên màu đã xoay */
+      #stage,
+      #ui {
+        filter: hue-rotate(40deg) saturate(1.05) !important;
+      }
+
+      /* Logo không bị ảnh hưởng filter */
+      #logo {
+        filter: none !important;
+      }
+    </style>
+    <style>
+      #userStateLoggedIn,
+      #userStateLoggedOut,
+      #showLanguageSelection,
+      #registerNotice,
+      #start-lounge-crushDisplay,
+      #start-lounge-billboardGame {
+        display: none !important;
+      }
+
+      /* Thiên thạch / Sao băng - bay SAU màn hình máy */
+      .meteor {
+        position: fixed;
+        width: 2px;
+        height: 120px;
+        background: linear-gradient(to bottom,
+          rgba(255, 255, 255, 1) 0%,
+          rgba(0, 242, 254, 0.8) 30%,
+          rgba(0, 180, 254, 0.3) 70%,
+          transparent 100%
+        );
+        border-radius: 2px;
+        pointer-events: none;
+        z-index: 1;
+        opacity: 0;
+      }
+      @keyframes meteorFly {
+        0%   { opacity: 1; }
+        80%  { opacity: 0.7; }
+        100% { opacity: 0; }
+      }
+    </style>
+    <script>
+      (function() {
+        // Hướng bay: (dx, dy) trong toạ độ màn hình
+        // Góc quay được tính tự động từ vector, đầu trắng luôn dẫn đầu
+        var DIRECTIONS = [
+          { dx:  400, dy:  250 }, // xuống phải
+          { dx:  200, dy:  450 }, // mostly xuống phải
+          { dx:  500, dy:  120 }, // mostly sang phải
+          { dx: -300, dy:  400 }, // xuống trái
+          { dx:  350, dy: -350 }, // lên phải
+          { dx: -450, dy:  200 }, // mostly sang trái
+          { dx:   80, dy:  500 }, // mostly xuống
+          { dx: -300, dy: -250 }, // lên trái
+        ];
+
+        function spawnMeteor() {
+          var m = document.createElement('div');
+          m.className = 'meteor';
+
+          var dir = DIRECTIONS[Math.floor(Math.random() * DIRECTIONS.length)];
+
+          // Tính góc quay tự động từ vector để đầu trắng luôn truyền đi đúng hướng
+          // Góc 0° = đầu top đang nhìn LÊN, xoay CW
+          var angle = Math.atan2(dir.dx, -dir.dy) * 180 / Math.PI;
+
+          var startX = Math.random() * window.innerWidth;
+          var startY = Math.random() * window.innerHeight;
+          m.style.left = startX + 'px';
+          m.style.top  = startY + 'px';
+
+          var duration = 700 + Math.random() * 900;
+
+          // translate(dx,dy) rotate(angle): translate ở screen-space, KHÔNG phải local space
+          m.animate([
+            { transform: 'translate(0, 0) rotate(' + angle + 'deg)', opacity: 1 },
+            { transform: 'translate(' + dir.dx + 'px, ' + dir.dy + 'px) rotate(' + angle + 'deg)', opacity: 0 }
+          ], { duration: duration, easing: 'linear', fill: 'forwards' });
+
+          document.body.appendChild(m);
+          setTimeout(function() { m.remove(); }, duration + 200);
+          setTimeout(spawnMeteor, 1500 + Math.random() * 3500);
+        }
+
+        window.addEventListener('load', function() {
+          setTimeout(spawnMeteor, 500);
+          setTimeout(spawnMeteor, 2000);
+          setTimeout(spawnMeteor, 3800);
+        });
+      })();
+    </script>
+    <script>
+    /* === HOLOGRAM STATION v2: Phân tử 3D với Perspective + Projection Beam === */
+    (function() {
+      function buildHologram() {
+        if (document.getElementById('hologram-station')) return;
+        console.log('[A1K50] Building hologram station v2...');
+
+        // === INJECT CSS ===
+        if (!document.getElementById('hologram-style')) {
+          var s = document.createElement('style');
+          s.id = 'hologram-style';
+          s.textContent = `
+            @keyframes holoPulse {
+              0%   { opacity:0.55; letter-spacing: 2.5px; }
+              50%  { opacity:1.0;  letter-spacing: 3.5px; }
+              100% { opacity:0.55; letter-spacing: 2.5px; }
+            }
+            @keyframes beamFlicker {
+              0%,100% { opacity:0.55; transform: translateX(-50%) scaleX(1.0); }
+              30%      { opacity:0.80; transform: translateX(-50%) scaleX(1.08); }
+              70%      { opacity:0.45; transform: translateX(-50%) scaleX(0.95); }
+            }
+            @keyframes beamCore {
+              0%,100% { opacity:0.25; }
+              50%     { opacity:0.55; }
+            }
+            @keyframes platformRing {
+              from { transform: rotateX(72deg) rotate(0deg);   opacity:0.4; }
+              to   { transform: rotateX(72deg) rotate(360deg); opacity:0.7; }
+            }
+            @keyframes scanLine {
+              0%   { top: 0%; opacity: 0.6; }
+              100% { top: 100%; opacity: 0; }
+            }
+            #hologram-station {
+              image-rendering: pixelated;
+            }`;
+          document.head.appendChild(s);
+        }
+
+        // === WRAPPER chính ===
+        var station = document.createElement('div');
+        station.id = 'hologram-station';
+        // Bục podium thực tế: trung tâm ~(1050, 530) trên viewport 1512x800
+        // Hologram nằm TRÊN mặt nghiêng, nên dịch lên trên bục một chút
+        // Perspective: bục nghiêng ~40° → ta rotateX(40deg) để hologram "nằm" trên mặt đó
+        Object.assign(station.style, {
+          position:    'fixed',
+          left:        '940px',   // tâm bục phía phải
+          top:         '380px',   // trên mặt nghiêng của bục
+          width:       '220px',
+          height:      '280px',
+          pointerEvents: 'none',
+          zIndex:      '99999',
+          transformOrigin: '50% 100%',   // xoay từ đáy xuống
+          /* Perspective: skew để khớp bục nghiêng ~40° từ camera */
+          transform:   'perspective(900px) rotateX(38deg) rotateY(-8deg) translateY(-30px)',
+        });
+
+        // === PROJECTION BEAM (tia sáng chiếu từ mặt bàn lên) ===
+        var beam = document.createElement('div');
+        beam.id = 'holo-beam';
+        Object.assign(beam.style, {
+          position:   'absolute',
+          bottom:     '0px',
+          left:       '50%',
+          transform:  'translateX(-50%)',
+          width:      '140px',
+          height:     '200px',
+          background: 'linear-gradient(to top, rgba(0,242,254,0.30) 0%, rgba(0,200,255,0.18) 25%, rgba(0,180,255,0.08) 60%, transparent 100%)',
+          clipPath:  'polygon(50% 100%, 5% 0%, 95% 0%)',
+          animation: 'beamFlicker 2.5s ease-in-out infinite',
+          borderRadius: '0 0 50% 50%',
+        });
+        station.appendChild(beam);
+
+        // Lõi beam (dải sáng trung tâm mảnh hơn, sáng hơn)
+        var beamCore = document.createElement('div');
+        Object.assign(beamCore.style, {
+          position:   'absolute',
+          bottom:     '0px',
+          left:       '50%',
+          transform:  'translateX(-50%)',
+          width:      '30px',
+          height:     '190px',
+          background: 'linear-gradient(to top, rgba(180,255,255,0.6), rgba(0,242,254,0.15), transparent)',
+          clipPath:  'polygon(50% 100%, 0% 0%, 100% 0%)',
+          animation: 'beamCore 2s ease-in-out infinite',
+        });
+        station.appendChild(beamCore);
+
+        // === PLATFORM RING (vòng tròn phát sáng dưới đáy) ===
+        var ring = document.createElement('div');
+        Object.assign(ring.style, {
+          position:      'absolute',
+          bottom:        '-10px',
+          left:          '50%',
+          marginLeft:    '-60px',
+          width:         '120px',
+          height:        '30px',
+          border:        '2px solid rgba(0,242,254,0.7)',
+          borderRadius:  '50%',
+          boxShadow:     '0 0 12px rgba(0,242,254,0.8), inset 0 0 8px rgba(0,242,254,0.3)',
+          animation:     'beamCore 2s ease-in-out infinite',
+        });
+        station.appendChild(ring);
+
+        // === CANVAS phân tử 3D (lớn hơn) ===
+        var cv = document.createElement('canvas');
+        cv.width  = 220;
+        cv.height = 180;
+        Object.assign(cv.style, {
+          display:  'block',
+          position: 'relative',
+          marginTop: '0px',
+        });
+        station.appendChild(cv);
+
+        // Scan-line chạy từ trên xuống
+        var scan = document.createElement('div');
+        Object.assign(scan.style, {
+          position:   'absolute',
+          top:        '0',
+          left:       '0',
+          width:      '100%',
+          height:     '12px',
+          background: 'linear-gradient(to bottom, transparent, rgba(0,242,254,0.25), transparent)',
+          animation:  'scanLine 2.8s linear infinite',
+          pointerEvents: 'none',
+        });
+        station.appendChild(scan);
+
+        // === NHÃN hologram ===
+        var lbl = document.createElement('div');
+        Object.assign(lbl.style, {
+          textAlign:       'center',
+          fontFamily:      '"Consolas","Courier New",monospace',
+          fontSize:        '11px',
+          fontWeight:      '700',
+          letterSpacing:   '3px',
+          color:           '#00f2fe',
+          textShadow:      '0 0 8px #00f2fe, 0 0 18px #00f2fe',
+          marginTop:       '-6px',
+          backgroundColor: 'rgba(0,10,30,0.6)',
+          padding:         '3px 0',
+          borderTop:       '1px solid rgba(0,242,254,0.5)',
+          animation:       'holoPulse 3s ease-in-out infinite',
+        });
+        lbl.innerHTML = '◈ A1K50 CORE ◈';
+        station.appendChild(lbl);
+
+        document.body.appendChild(station);
+
+        // === VẼ PHÂN TỬ 3D ===
+        var ctx = cv.getContext('2d');
+        var cx = 110, cy = 88, t = 0;
+
+        // 3 quỹ đạo electron – dày hơn, sáng hơn
+        var orbits = [
+          { rx: 68, ry: 24, tilt: 0,    speed: 0.017, color: '#00f2fe', eSize: 6 },
+          { rx: 55, ry: 22, tilt: 1.05, speed: 0.026, color: '#7df9ff', eSize: 5 },
+          { rx: 60, ry: 18, tilt: 2.15, speed: 0.013, color: '#00cfff', eSize: 5 },
+        ];
+
+        function drawGlow(x, y, r, colorRgb, alpha) {
+          var g = ctx.createRadialGradient(x, y, 0, x, y, r);
+          g.addColorStop(0, 'rgba(' + colorRgb + ',' + alpha + ')');
+          g.addColorStop(1, 'rgba(0,0,0,0)');
+          ctx.fillStyle = g;
+          ctx.beginPath();
+          ctx.arc(x, y, r, 0, 2*Math.PI);
+          ctx.fill();
+        }
+
+        function drawEllipse(rx, ry, tilt, color, phase) {
+          ctx.save();
+          ctx.translate(cx, cy);
+          ctx.rotate(tilt);
+          ctx.beginPath();
+          ctx.ellipse(0, 0, rx, ry, 0, 0, 2*Math.PI);
+          ctx.strokeStyle = color;
+          ctx.globalAlpha = 0.4 + 0.15 * Math.sin(phase);
+          ctx.lineWidth = 1.5;
+          ctx.stroke();
+          ctx.restore();
+        }
+
+        function frame() {
+          ctx.clearRect(0, 0, cv.width, cv.height);
+          t++;
+
+          // Quỹ đạo
+          orbits.forEach(function(o, i) {
+            drawEllipse(o.rx, o.ry, o.tilt, o.color, t * 0.02 + i);
+          });
+
+          // Hạt nhân – outer glow + inner bright
+          ctx.globalAlpha = 1;
+          drawGlow(cx, cy, 30, '0,200,255', 0.25);
+          drawGlow(cx, cy, 18, '0,242,254', 0.5);
+          var gn = ctx.createRadialGradient(cx-5, cy-5, 2, cx, cy, 16);
+          gn.addColorStop(0, '#ffffff');
+          gn.addColorStop(0.35, '#80f8ff');
+          gn.addColorStop(0.7,  '#00aadd');
+          gn.addColorStop(1,    'rgba(0,80,180,0)');
+          ctx.fillStyle = gn;
+          ctx.beginPath();
+          ctx.arc(cx, cy, 16, 0, 2*Math.PI);
+          ctx.fill();
+
+          // Electron particles
+          orbits.forEach(function(o) {
+            var a  = t * o.speed;
+            var ex = cx + Math.cos(a)*o.rx*Math.cos(o.tilt) - Math.sin(a)*o.ry*Math.sin(o.tilt);
+            var ey = cy + Math.cos(a)*o.rx*Math.sin(o.tilt) + Math.sin(a)*o.ry*Math.cos(o.tilt);
+            ctx.globalAlpha = 1;
+            drawGlow(ex, ey, 14, '125,249,255', 0.4);
+            var ge = ctx.createRadialGradient(ex-1, ey-1, 1, ex, ey, o.eSize);
+            ge.addColorStop(0, '#ffffff');
+            ge.addColorStop(0.45, o.color);
+            ge.addColorStop(1, 'transparent');
+            ctx.fillStyle = ge;
+            ctx.beginPath();
+            ctx.arc(ex, ey, o.eSize, 0, 2*Math.PI);
+            ctx.fill();
+          });
+
+          requestAnimationFrame(frame);
+        }
+        frame();
+      }
+
+      // Kiểm tra mỗi 500ms — dùng offsetParent để phát hiện element visible thực sự
+      setInterval(function() {
+        // Foyer: #start-lounge có mặt và VISIBLE (không display:none)
+        var sl = document.getElementById('start-lounge');
+        var inFoyer = sl && sl.offsetParent !== null;
+        var has = !!document.getElementById('hologram-station');
+        if (inFoyer && !has) {
+          buildHologram();
+        } else if (!inFoyer && has) {
+          document.getElementById('hologram-station').remove();
+        }
+      }, 500);
+    })();
+    </script>
+  </head>
+  <body class="lang-vi r-asia_pacific">
+    <div id="page-wrapper">
+      <div id="wrapper">
+        <div id="stage" class="stageSize">
+          <div id="offsetProxy" class="stageSize"></div>
+          <div id="startScreen" class="stageSize">
+            <img
+              class="bg"
+              src="/img/global/loader_new.png"
+              fetchpriority="high"
+              alt=""
+            />
+            <div class="welcome">
+              <div class="header">HỆ THỐNG MÔ PHỎNG thí nghiệm</div>
+              <div class="text">
+                Vui lòng khởi động hệ thống phòng thí nghiệm đa chiều và tiến
+                hành phân tích số liệu cùng Trợ lý AI.
+              </div>
+              <a class="pointer buttonWrapper"
+                ><div class="svg" data-svg="button"></div>
+                <span class="bold text">KHỞI HÀNH</span></a
+              >
+              <div class="doctor"></div>
+            </div>
+            <div class="cloud cloud1"></div>
+            <div class="cloud cloud2"></div>
+            <div class="cloud cloud3"></div>
+            <div class="cloud cloud4"></div>
+            <div class="cloud cloud5"></div>
+          </div>
+          <div id="loaderScreen" class="stageSize">
+            <div id="loaderBar"><div id="loaderProgress"></div></div>
+            <div id="loaderMask" data-svg="loader"></div>
+          </div>
+        </div>
+        <div id="ui" class="absolute">
+          <div
+            id="supportButton"
+            class="button blue uiButton inactive"
+            data-click="playSupport"
+          >
+            <span class="uiIcon help"></span>
+          </div>
+          <div
+            id="padButton"
+            class="button blue uiButton inactive"
+            data-click="pad.open"
+          >
+            <span class="uiIcon pad"></span>
+          </div>
+          <div
+            id="exitButton"
+            class="button blue uiButton inactive"
+            data-click="exitGame"
+          >
+            <span class="uiIcon exit"></span>
+          </div>
+          <style>
+            #logo {
+              background: none !important;
+              width: 340px !important;
+              display: inline-block !important;
+              border: none !important;
+              box-shadow: none !important;
+              position: relative !important;
+              top: -5px !important;
+              left: 0px !important;
+            }
+            #custom_logo_container {
+              display: flex;
+              align-items: center;
+              gap: 14px;
+              cursor: default;
+              user-select: none;
+              padding: 6px 10px;
+              transition: transform 0.3s;
+              width: 100%;
+              box-sizing: border-box;
+            }
+            #custom_logo_container:hover {
+              transform: scale(1.02);
+            }
+            .pro-icon-wrapper {
+              width: 38px;
+              height: 38px;
+              border-radius: 50%;
+              background: linear-gradient(135deg, #1dc6eb 0%, #0056d6 100%);
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+              animation: floatIcon 3s ease-in-out infinite alternate;
+              flex-shrink: 0;
+              position: relative;
+            }
+            .pro-icon {
+              width: 22px;
+              height: 22px;
+              stroke: #fff;
+              stroke-width: 2.2;
+              fill: none;
+              stroke-linecap: round;
+              stroke-linejoin: round;
+              margin-top: 1px;
+            }
+            .pro-text-box {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              margin-top: 0px;
+            }
+            .pro-title {
+              font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+              font-size: 23px;
+              font-weight: 900;
+              letter-spacing: 1px;
+              color: #ffffff;
+              line-height: 1.1;
+              text-transform: uppercase;
+              white-space: nowrap;
+              text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+            }
+            .pro-subtitle {
+              font-family: "Consolas", "Courier New", monospace;
+              font-size: 11.5px;
+              font-weight: 700;
+              letter-spacing: 1.5px;
+              color: #bde0ff;
+              text-transform: uppercase;
+              display: flex;
+              align-items: center;
+              gap: 6px;
+              line-height: 1;
+              margin-top: 4px;
+              white-space: nowrap;
+              opacity: 0.9;
+            }
+            .pro-dot {
+              width: 6px;
+              height: 6px;
+              background-color: #00ffaa;
+              border-radius: 50%;
+              box-shadow: 0 0 6px rgba(0, 255, 170, 0.8);
+              animation: blinkDot 1.5s infinite;
+              flex-shrink: 0;
+            }
+            .chem-bubble {
+              animation: bubbleUp 2s infinite ease-in;
+              opacity: 0;
+            }
+            .b1 {
+              animation-delay: 0s;
+            }
+            .b2 {
+              animation-delay: 0.7s;
+            }
+            .b3 {
+              animation-delay: 1.2s;
+            }
+            @keyframes bubbleUp {
+              0% {
+                transform: translateY(0);
+                opacity: 0;
+              }
+              30% {
+                opacity: 1;
+              }
+              100% {
+                transform: translateY(-8px);
+                opacity: 0;
+              }
+            }
+            @keyframes floatIcon {
+              0% {
+                transform: translateY(-1.5px);
+              }
+              100% {
+                transform: translateY(1.5px);
+              }
+            }
+            @keyframes blinkDot {
+              0%,
+              100% {
+                opacity: 1;
+              }
+              50% {
+                opacity: 0.4;
+              }
+            }
+          </style>
+          <div id="logo">
+            <div id="custom_logo_container">
+              <div class="pro-icon-wrapper">
+                <svg viewBox="0 0 24 24" class="pro-icon">
+                  <path
+                    d="M10 2v7.31M14 2v7.31M8.5 2h7M7.18 14.25l-.47.63A2 2 0 0 0 8.31 18h7.38a2 2 0 0 0 1.6-3.12l-.47-.63a2 2 0 0 1-.32-1V9.31c0-.53.21-1.04.59-1.41l1.52-1.52A2 2 0 0 0 17 5V2H7v3a2 2 0 0 0 .59 1.41l1.52 1.52c.38.37.59.88.59 1.41v3.94a2 2 0 0 1-.32 1z"
+                  ></path>
+                  <path d="M7 16h10" stroke="rgba(255,255,255,0.7)"></path>
+                  <circle
+                    cx="10"
+                    cy="14"
+                    r="1.5"
+                    fill="#fff"
+                    stroke="none"
+                    class="chem-bubble b1"
+                  ></circle>
+                  <circle
+                    cx="13"
+                    cy="15"
+                    r="2"
+                    fill="#fff"
+                    stroke="none"
+                    class="chem-bubble b2"
+                  ></circle>
+                  <circle
+                    cx="11.5"
+                    cy="12"
+                    r="1"
+                    fill="#fff"
+                    stroke="none"
+                    class="chem-bubble b3"
+                  ></circle>
+                </svg>
+              </div>
+              <div class="pro-text-box">
+                <span class="pro-title">HỒ HOÀNG ANH</span>
+                <div class="pro-subtitle">
+                  <div class="pro-dot"></div>
+                  <span>A1K50 Quỳnh Lưu 4</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="uiPointsWrapper">
+            <span class="uiIcon"></span
+            ><span id="uiPoints" class="latinFont">0</span>
+          </div>
+          <div class="userState hidden" id="userStateLoggedOut">
+            <div
+              id="showLogin"
+              data-click="ui.login"
+              class="button blue uiButton inactive"
+            >
+              <span class="uiIcon settings"></span
+              ><span class="buttonLabel">Đăng nhập</span
+              ><span class="uiIcon arrow"></span>
+            </div>
+          </div>
+          <div class="userState" id="userStateLoggedIn">
+            <div
+              id="showUserPanel"
+              data-click="ui.userPanel"
+              class="button blue uiButton inactive"
+            >
+              <span class="uiIcon settings"></span
+              ><span id="loggedUser" class="buttonLabel">lucky5632</span
+              ><span class="uiIcon arrow"></span>
+            </div>
+          </div>
+          <div
+            id="showLanguageSelection"
+            data-click="ui.languageSelection"
+            class="button blue uiButton inactive"
+          >
+            <span class="uiIcon language"></span
+            ><span class="buttonLabel">[% trans('language_vi') %]</span
+            ><span class="uiIcon arrow"></span>
+          </div>
+          <div id="registerNotice">
+            Hãy đăng ký để lưu điểm số và các thành tích của bạn!
+          </div>
+          <div id="uiOverlay" data-click="ui.closeOverlay:self">
+            <form
+              id="registration"
+              class="uiForm"
+              method="POST"
+              data-ajax-form
+              action="/register"
+              autocomplete="off"
+            >
+              <div>
+                <div class="uiScrollContainer">
+                  Để đăng ký, bạn cần có một biệt danh và mật khẩu riêng. Bạn có
+                  thể lưu và hiển thị điểm số và các thành tích của mình bất kỳ
+                  lúc nào bằng tài khoản cá nhân.
+                  <div class="error hidden"></div>
+                  <div class="inputWrapper">
+                    <input
+                      type="hidden"
+                      name="register_token"
+                      value="fafb14d2c17d5f9c5b8.ssETNSejnkyMMLhQ5pynEpymXd0yttVRmh7u6q2u8p4.1PJff0vz7gm4dcgJkvP_Iv_OCa5d5-YW9WrYvNrCmKjr7FUMSuz1HKEH_Q"
+                    /><label class="row" for="username_69c6380d4358f"
+                      ><span class="firstColumn"> [% trans("username") %] </span
+                      ><span class="secondColumn"
+                        ><input
+                          type="text"
+                          name="username"
+                          id="username_69c6380d4358f"
+                          class="uiInput"
+                          maxlength="20"
+                          required /></span></label
+                    ><label class="row" for="password_69c6380d43599"
+                      ><span class="firstColumn"> [% trans("password") %] </span
+                      ><span class="secondColumn"
+                        ><input
+                          type="password"
+                          name="password"
+                          id="password_69c6380d43599"
+                          class="uiInput"
+                          maxlength="20"
+                          required /></span></label
+                    ><label class="row" for="repeat_password_69c6380d4359b"
+                      ><span class="firstColumn">
+                        [% trans("repeatPassword") %] </span
+                      ><span class="secondColumn"
+                        ><input
+                          type="password"
+                          name="repeat_password"
+                          id="repeat_password_69c6380d4359b"
+                          class="uiInput"
+                          maxlength="20"
+                          required /></span></label
+                    ><label class="row" for="email_69c6380d4359d"
+                      ><span class="firstColumn">
+                        [% trans("emailAddress") %] * </span
+                      ><span class="secondColumn"
+                        ><input
+                          type="email"
+                          name="email"
+                          id="email_69c6380d4359d"
+                          class="uiInput" /></span
+                    ></label>
+                  </div>
+                  <div class="notice emailOptional">
+                    * Bạn không bắt buộc phải cung cấp địa chỉ email, nhưng
+                    thông tin này sẽ giúp chúng tôi liên lạc với bạn trong
+                    trường hợp bạn quên và muốn thiết lập lại mật khẩu.
+                  </div>
+                  <div class="right">
+                    <button type="submit" value="" class="button uiButton">
+                      Đăng ký
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <div id="formFeedback" class="uiForm"><div></div></div>
+            <form
+              id="login"
+              class="uiForm"
+              method="POST"
+              data-ajax-form
+              action="/user/login"
+            >
+              Đăng nhập bằng biệt danh để hiển thị điểm số và thành tích của
+              bạn.
+              <div class="error hidden"></div>
+              <div class="inputWrapper">
+                <input
+                  type="hidden"
+                  name="authenticate_token"
+                  value="a.oBtKBwk4iVssdlKM7bNGTXopMA4C2B6Fbp3LiZ4SNbk.9n0eS118sRxgBT_ZuYEqfgwaADpqklPMI9St6stYUovBXxNqb3D6YnQPYg"
+                /><label class="row" for="username_69c6380d43adb"
+                  ><span class="firstColumn"> [% trans("username") %] </span
+                  ><span class="secondColumn"
+                    ><input
+                      type="text"
+                      name="username"
+                      id="username_69c6380d43adb"
+                      class="uiInput"
+                      maxlength="20"
+                      required /></span></label
+                ><label class="row" for="password_69c6380d43add"
+                  ><span class="firstColumn"> [% trans("password") %] </span
+                  ><span class="secondColumn"
+                    ><input
+                      type="password"
+                      name="password"
+                      id="password_69c6380d43add"
+                      class="uiInput"
+                      maxlength="20"
+                      required /></span
+                ></label>
+                <div class="row">
+                  <span class="firstColumn">&nbsp;</span
+                  ><span
+                    data-click="ui.forgotPassword"
+                    class="pointer underline secondColumn"
+                    >Bạn quên mật khẩu?</span
+                  >
+                </div>
+              </div>
+              <div class="right">
+                <span
+                  id="showRegistration"
+                  data-click="ui.registration"
+                  class="button blue uiButton"
+                  ><span class="buttonLabel">Đăng ký</span></span
+                ><button type="submit" value="" class="button uiButton">
+                  Đăng nhập
+                </button>
+              </div>
+            </form>
+            <form
+              id="forgotPassword"
+              class="uiForm"
+              method="POST"
+              data-ajax-form
+              action="/forgot-password"
+            >
+              <h2>Bạn quên mật khẩu?</h2>
+              <div>
+                Bạn có thể đăng nhập ở đây nếu đã đăng ký kèm địa chỉ email. Bạn
+                sẽ nhận được một email để thiết lập lại mật khẩu.
+              </div>
+              <div class="error hidden"></div>
+              <div class="inputWrapper">
+                <input
+                  type="hidden"
+                  name="forget_password_token"
+                  value="73e7a2d7fec7adb9ebdb336df1fd51.nZbizV-lhMAd06As1H2osFnWU2ZJag9I9PAb35sYu0w.qPOzngvH9Kd1svRbvirR2wC_OF4ILW4DmqJ2jqNB4X_Tp5KHFP39hCy3lA"
+                /><label class="row" for="email_69c6380d43b6c"
+                  ><span class="firstColumn"> [% trans("emailAddress") %] </span
+                  ><span class="secondColumn"
+                    ><input
+                      type="email"
+                      name="email"
+                      id="email_69c6380d43b6c"
+                      class="uiInput"
+                      required /></span
+                ></label>
+              </div>
+              <div class="right">
+                <button type="submit" value="" class="button uiButton">
+                  Gửi
+                </button>
+              </div>
+            </form>
+            <form
+              id="resetPassword"
+              class="uiForm"
+              autocomplete="off"
+              method="POST"
+              data-ajax-form
+              action="/reset-password"
+            >
+              <h2>Thiết lập lại mật khẩu</h2>
+              <div>Nhập mật khẩu mới cho lần đăng nhập sau.</div>
+              <div class="error hidden"></div>
+              <div class="inputWrapper">
+                <input
+                  type="hidden"
+                  name="reset_password_token"
+                  value="f6a7bf80b859a466d9.0Wrcd0putnE_Zo5s8Z-8QY-ycrcr_JcctrxqAkACpCM.gi6IJS49_zpmB8MNqPbYLbbYS9l5qNRM-PQ1YSdvlhSVB_ECGzzjEk8S5Q"
+                /><input type="hidden" name="reset_token" /><label
+                  class="row"
+                  for="passwordReset"
+                  ><span class="firstColumn"> [% trans("password") %] </span
+                  ><span class="secondColumn"
+                    ><input
+                      type="password"
+                      name="password"
+                      id="passwordReset"
+                      class="uiInput"
+                      maxlength="20"
+                      required /></span></label
+                ><label class="row" for="repeatPasswordReset"
+                  ><span class="firstColumn">
+                    [% trans("repeatPassword") %] </span
+                  ><span class="secondColumn"
+                    ><input
+                      type="password"
+                      name="repeat_password"
+                      id="repeatPasswordReset"
+                      class="uiInput"
+                      maxlength="20"
+                      required /></span
+                ></label>
+              </div>
+              <div class="right">
+                <button type="submit" value="" class="button uiButton">
+                  Gửi
+                </button>
+              </div>
+            </form>
+            <div id="userPanel" class="uiForm">
+              <form
+                id="logout"
+                method="POST"
+                data-ajax-form
+                action="/user/logout"
+                class="right"
+              >
+                <button type="submit" class="button uiButton">Đăng xuất</button>
+              </form>
+              <hr class="roundSeparator" />
+              <div>Bạn có thể thay đổi địa chỉ email và mật khẩu ở đây.</div>
+              <form
+                id="editUser"
+                method="POST"
+                data-ajax-form
+                action="/user/edit"
+              >
+                <div class="error hidden"></div>
+                <div class="success hidden"></div>
+                <div class="inputWrapper">
+                  <input
+                    type="hidden"
+                    name="edit_token"
+                    value="90033ff1819d3.rIF_N8Aet-VZZ_UOe9djt_Xk2WcrtHajMe2n-ca2KQQ.89QoAItB8rA8M8ddOPob8KKUnFQTghThBbXkiYLmeE3b-wdnkFTWuhFKrA"
+                  /><label class="row" for="password_69c6380d43c79"
+                    ><span class="firstColumn"> [% trans("password") %] </span
+                    ><span class="secondColumn"
+                      ><input
+                        type="password"
+                        name="password"
+                        id="password_69c6380d43c79"
+                        class="uiInput"
+                        maxlength="20" /></span></label
+                  ><label class="row" for="repeat_password_69c6380d43c7a"
+                    ><span class="firstColumn">
+                      [% trans("repeatPassword") %] </span
+                    ><span class="secondColumn"
+                      ><input
+                        type="password"
+                        name="repeat_password"
+                        id="repeat_password_69c6380d43c7a"
+                        class="uiInput"
+                        maxlength="20" /></span></label
+                  ><label class="row" for="email_69c6380d43c7c"
+                    ><span class="firstColumn">
+                      [% trans("emailAddress") %] * </span
+                    ><span class="secondColumn"
+                      ><input
+                        type="email"
+                        name="email"
+                        id="email_69c6380d43c7c"
+                        class="uiInput"
+                        value="hohoanganh20092021@gmail.com" /></span
+                  ></label>
+                </div>
+                <div class="notice emailOptional">
+                  * Bạn không bắt buộc phải cung cấp địa chỉ email, nhưng thông
+                  tin này sẽ giúp chúng tôi liên lạc với bạn trong trường hợp
+                  bạn quên và muốn thiết lập lại mật khẩu.
+                </div>
+                <div class="right">
+                  <button type="submit" value="" class="button uiButton">
+                    Gửi
+                  </button>
+                </div>
+              </form>
+            </div>
+            <form id="languageSelection" class="uiForm" method="post">
+              <div>Chọn ngôn ngữ</div>
+              <br /><button
+                type="button"
+                name="l"
+                value="en"
+                class="button uiButton l-en"
+              >
+                [% trans('language_en') %]</button
+              ><button
+                type="submit"
+                name="l"
+                value="de"
+                class="button uiButton l-de"
+              >
+                [% trans('language_de') %]</button
+              ><button
+                type="submit"
+                name="l"
+                value="de_SIMPLE"
+                class="button uiButton l-de_SIMPLE"
+              >
+                [% trans('language_de_SIMPLE') %]</button
+              ><button
+                type="submit"
+                name="l"
+                value="es"
+                class="button uiButton l-es"
+              >
+                [% trans('language_es') %]</button
+              ><button
+                type="submit"
+                name="l"
+                value="zh_CN"
+                class="button uiButton l-zh_CN"
+              >
+                [% trans('language_zh_CN') %]</button
+              ><button
+                type="submit"
+                name="l"
+                value="zh_TW"
+                class="button uiButton l-zh_TW"
+              >
+                [% trans('language_zh_TW') %]</button
+              ><button
+                type="submit"
+                name="l"
+                value="ko"
+                class="button uiButton l-ko"
+              >
+                [% trans('language_ko') %]</button
+              ><button
+                type="submit"
+                name="l"
+                value="ja"
+                class="button uiButton l-ja"
+              >
+                [% trans('language_ja') %]</button
+              ><button
+                type="submit"
+                name="l"
+                value="vi"
+                class="button uiButton l-vi"
+              >
+                [% trans('language_vi') %]</button
+              ><button
+                type="submit"
+                name="l"
+                value="nl"
+                class="button uiButton l-nl"
+              >
+                [% trans('language_nl') %]</button
+              ><button
+                type="submit"
+                name="l"
+                value="id"
+                class="button uiButton l-id"
+              >
+                [% trans('language_id') %]</button
+              ><button
+                type="submit"
+                name="l"
+                value="fr"
+                class="button uiButton l-fr"
+              >
+                [% trans('language_fr') %]</button
+              ><button
+                type="submit"
+                name="l"
+                value="th"
+                class="button uiButton l-th"
+              >
+                [% trans('language_th') %]
+              </button>
+              <div class="hidden" id="selectRegion">
+                <input
+                  id="englishLanguage"
+                  type="hidden"
+                  name="l"
+                  value="en"
+                  disabled
+                />
+                <hr class="roundSeparator" />
+                <div>Please choose your region.</div>
+                <br /><button
+                  type="submit"
+                  name="r"
+                  value="europe"
+                  class="button uiButton"
+                >
+                  Europe</button
+                ><button
+                  type="submit"
+                  name="r"
+                  value="us"
+                  class="button uiButton"
+                >
+                  US</button
+                ><button
+                  type="submit"
+                  name="r"
+                  value="asia_pacific"
+                  class="button uiButton"
+                >
+                  Asia Pacific
+                </button>
+              </div>
+            </form>
+            <div
+              id="closeOverlay"
+              class="closeOverlay button blue uiButton"
+              data-click="ui.closeOverlay"
+            >
+              <span class="uiIcon arrow"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        var __appConfig = {
+          isErrorPage: false,
+          mode: "prod",
+          dev: false,
+          assetPath: "assets/dist/",
+          assets: {
+            "src-client\/js\/main.js": "main.0cf5b308217825fda025.js",
+            "src-client\/js\/seo.ts": "seo.5596f6a8f36ffa5126d5.js",
+            "src-client\/js\/print.js": "print.ab3e6130866cd0d55b6c.js",
+            "src-client\/js\/baseConfig.js":
+              "baseConfig.c9bb0ee66aa4b2222e33.js",
+            "src-client\/js\/cookieBanner.js":
+              "cookieBanner.4018d50297ac5aa449c3.js",
+            "src-client\/js\/service\/debug\/service.js":
+              "service.560f8d19ffcb9ff9ec1c.js",
+            "src-client\/js\/behavior\/crush\/Crush.js":
+              "Crush.f2d0a81b04ba1cfaebd9.js",
+            "src-client\/js\/behavior\/game1\/Game1.js":
+              "Game1.aeb15bef98f8038f8484.js",
+            "src-client\/js\/behavior\/game10\/Game10.js":
+              "Game10.24c82cad8e73613db328.js",
+            "src-client\/js\/behavior\/game11\/Game11.js":
+              "Game11.8093bf3f87cd2cc97add.js",
+            "src-client\/js\/behavior\/game12\/Game12.js":
+              "Game12.b81a42a5b0bf8ced853a.js",
+            "src-client\/js\/behavior\/game13\/Game13.js":
+              "Game13.f78f63a2fedc08f1bff1.js",
+            "src-client\/js\/behavior\/game14\/Game14.js":
+              "Game14.baf5205701b8d7b6542b.js",
+            "src-client\/js\/behavior\/game15\/Game15.js":
+              "Game15.4724e1af43ebe2f3575e.js",
+            "src-client\/js\/behavior\/game16\/Game16.js":
+              "Game16.89bb9f269fdeb9d9e6a3.js",
+            "src-client\/js\/behavior\/game1Short\/Game1Short.js":
+              "Game1Short.9d5c187fd68e96ac6d3a.js",
+            "src-client\/js\/behavior\/game2\/Game2.js":
+              "Game2.e52c5b70b2338a4c444e.js",
+            "src-client\/js\/behavior\/game3\/Game3.js":
+              "Game3.6236ee62c56be34ac96d.js",
+            "src-client\/js\/behavior\/game4\/Game4.js":
+              "Game4.1dc00f49bfc95077601d.js",
+            "src-client\/js\/behavior\/game5\/Game5.js":
+              "Game5.d2481f3d30de1d00a377.js",
+            "src-client\/js\/behavior\/game6\/Game6.js":
+              "Game6.7600a894f7fd9c09a98a.js",
+            "src-client\/js\/behavior\/game7\/Game7.js":
+              "Game7.281c928c2d97cf552ac1.js",
+            "src-client\/js\/behavior\/game8\/Game8.js":
+              "Game8.4eebe590f92614749081.js",
+            "src-client\/js\/behavior\/game9\/Game9.js":
+              "Game9.4560e01f5ddcec6e4666.js",
+            "src-client\/js\/behavior\/start\/Start.js":
+              "Start.0f8babb0e6c4d56530fc.js",
+            "src-client\/js\/stage\/global\/Doctor-asia_pacific.js":
+              "Doctor-asia_pacific.c5de2239b3884a3e1126.js",
+            "src-client\/js\/stage\/global\/Doctor-europe.js":
+              "Doctor-europe.b72e3c8327e6dd584a05.js",
+            "src-client\/js\/stage\/global\/Doctor-us.js":
+              "Doctor-us.19367dc98f3d053bf0a7.js",
+            "src-client\/js\/speechLab\/main.js":
+              "main2.5a6e48f333ec34cb1320.js",
+            "src-client\/js\/promo\/appProtAct17\/appProtAct17.js":
+              "appProtAct17.7d952d75021e719713b6.js",
+            "src-client\/scss\/style.scss": "style.87872fff379c27398189.css",
+            "src-client\/scss\/styleDeferred.scss":
+              "styleDeferred.caeadafbb497ec211610.css",
+            "src-client\/scss\/seo.scss": "seo2.9c4287d3247ed25ef8a9.css",
+            "src-client\/scss\/print.scss": "print2.4cde092500fc68ed1199.css",
+            "src-client\/scss\/debug.scss": "debug.83ea1de2c2197c72fca6.css",
+            "src-client\/scss\/cookieBanner.scss":
+              "cookieBanner2.0418dfa3d675811a4be3.css",
+            "src-client\/scss\/promoBase.scss":
+              "promoBase.ab9519ee50a47e2d4a58.css",
+            "src-client\/scss\/languages\/es.scss":
+              "es.da37ae2484c0eaba9cdd.css",
+            "src-client\/scss\/languages\/fr.scss":
+              "fr.847c87b04e035d749459.css",
+            "src-client\/scss\/languages\/id.scss":
+              "id.549b429dbdf8ba1491d6.css",
+            "src-client\/scss\/languages\/ja.scss":
+              "ja.76c4e878cac331254b84.css",
+            "src-client\/scss\/languages\/ko.scss":
+              "ko.80b51abf80af2aa6639c.css",
+            "src-client\/scss\/languages\/nl.scss":
+              "nl.120c3e5ba288d696cd9e.css",
+            "src-client\/scss\/languages\/th.scss":
+              "th.e9d04ef2f2f36d1c5859.css",
+            "src-client\/scss\/languages\/vi.scss":
+              "vi.c6773a487e87659c2ddd.css",
+            "src-client\/scss\/languages\/zh_CN.scss":
+              "zh_CN.7b07139e3f5784bd01b1.css",
+            "src-client\/scss\/languages\/zh_TW.scss":
+              "zh_TW.0796d1531ed79fdbead9.css",
+            "src-client\/scss\/promos\/easter2020.scss":
+              "easter2020.1a6b4d16f7748132e557.css",
+            "src-client\/scss\/promos\/master2019.scss":
+              "master2019.8240f416aee74befab4a.css",
+            "src-client\/scss\/promos\/master2020.scss":
+              "master2020.05d09dea553ad0d72c71.css",
+            "src-client\/scss\/promos\/sustainability2022.scss":
+              "sustainability2022.7f3866b20d455c4dbf3a.css",
+            "src-client\/scss\/promos\/xmas2023.scss":
+              "xmas2023.f447121f725e9bbe59b2.css",
+            "src-client\/scss\/promos\/xmas2024.scss":
+              "xmas2024.4572c57fc74a30c4c641.css",
+            "src-client\/scss\/promos\/xmas2025.scss":
+              "xmas2025.916fa515c44888638158.css",
+            "src-client\/scss\/speechLab\/style.scss":
+              "style2.ca94b83d8a328da22bb6.css",
+            "src-client\/scss\/privacyPolicy.scss":
+              "privacyPolicy.224d578141c9b8a39785.css",
+            vendor: "vendor.a1666d92e026d82815fe.js",
+            common: "common.9affd80a4039da948c94.js",
+          },
+          version: "1.3.0",
+          isSchoolVersion: false,
+          minified: true,
+          defaultLanguage: "de",
+          language: "vi",
+          region: "asia_pacific",
+          localeSlug: "vi",
+          apiToken:
+            "b9b7.gys91XCnZ9yz9MCI1hMFrQsIcsGvJRSJvxMcEqPrSJI.52cFkBryUqbbt5nR5itD411-AK_sCG7Gy0EuWsHdcfOwXU-PQ55Xl9WRsw",
+          gameAtStart: "",
+          userState: {
+            promo: [],
+            researchPoints: 16000,
+            crush: {
+              firstStart: false,
+              firstLevelFinished: false,
+              tutorialSeen: true,
+              totalPoints: 10000,
+              worlds: {
+                dirtywater: {
+                  levels: [
+                    { stars: 3, done: true, unlocked: true },
+                    { stars: 0, done: false, unlocked: true },
+                    { stars: 0, done: false, unlocked: true },
+                    { stars: 0, done: false, unlocked: true },
+                    { stars: 0, done: false, unlocked: true },
+                    { stars: 0, done: false, unlocked: true },
+                    { stars: 0, done: false, unlocked: true },
+                    { stars: 0, done: false, unlocked: true },
+                    { stars: 0, done: false, unlocked: true },
+                    { stars: 0, done: false, unlocked: false },
+                    { stars: 0, done: false, unlocked: false },
+                  ],
+                  points: 10000,
+                },
+              },
+            },
+            answers: { correct: 17, given: 34 },
+            tests: {
+              finishedCount: 1,
+              finished: ["game1"],
+              finishedInOneDay: ["game1"],
+              printedDiploma: ["game1"],
+            },
+            experiments: {
+              finishedCount: 14,
+              finished: [
+                "game14",
+                "game13",
+                "game9",
+                "game10",
+                "game11",
+                "game8",
+                "game3",
+                "game4",
+                "game5",
+                "game6",
+                "game7",
+                "game1",
+                "game2",
+              ],
+              finishedInOneDay: [
+                "game14",
+                "game13",
+                "game9",
+                "game10",
+                "game11",
+                "game8",
+                "game3",
+                "game4",
+                "game5",
+                "game6",
+                "game7",
+                "game1",
+                "game2",
+              ],
+              finishedInSession: [
+                "game14",
+                "game13",
+                "game9",
+                "game10",
+                "game11",
+                "game8",
+                "game3",
+                "game4",
+                "game5",
+                "game6",
+                "game7",
+                "game1",
+                "game2",
+              ],
+              sameInSeries: 1,
+              lastFinished: "game2",
+            },
+            clearBench: { count: 1, games: ["game8"] },
+            readGlossary: { ids: ["magnet"] },
+            readRules: { count: 1, sessionCount: 1 },
+            achievements: [
+              "premiereParty",
+              "driplePack",
+              "cleverDick",
+              "mrClean",
+            ],
+            timer: {
+              session: { start: 1774592527, duration: 5745 },
+              day: { start: 1774592527, duration: 5745 },
+              daysInSeries: 1,
+              totalDuration: 5745,
+              lastVisit: 1774592527,
+            },
+            familiarWithRules: true,
+            extendedIntroTime: 1774592544,
+            shelfOpenedBefore: true,
+          },
+          permittedStateKeys: [
+            "familiarWithRules",
+            "extendedIntroTime",
+            "researchPoints",
+            "timer",
+            "answers",
+            "tests",
+            "experiments",
+            "clearBench",
+            "readGlossary",
+            "readRules",
+            "achievements",
+            "shelfOpenedBefore",
+            "crush",
+            "speechLab",
+            "promo",
+          ],
+          promos: [],
+          routes: {
+            declinedCookie: "/user/declined-cookie",
+            updateUserState: "/user/update-user-state",
+            bundleTemplate: "/template/_bundle_/_id_",
+            promoTemplate: "/template/promo/_promo_/_id_",
+            print: "/print/_packedData_",
+            promoApi: "/promo/_promo_",
+            privacyPolicy: "/datenschutz",
+            newsletterConsent: "/newsletter-einwilligung",
+          },
+        };
+      </script>
+      <script src="assets/dist/common.9affd80a4039da948c94.js" defer></script>
+      <script src="assets/dist/vendor.a1666d92e026d82815fe.js" defer></script>
+      <script
+        src="assets/dist/baseConfig.c9bb0ee66aa4b2222e33.js"
+        defer
+      ></script>
+      <script
+        src="assets/dist/Doctor-asia_pacific.c5de2239b3884a3e1126.js"
+        defer
+      ></script>
+      <script src="assets/dist/main.0cf5b308217825fda025.js" defer></script>
+      <script
+        src="assets/dist/cookieBanner.4018d50297ac5aa449c3.js"
+        defer
+      ></script>
+    </div>
+  </body>
+</html>

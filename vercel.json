@@ -1,0 +1,14 @@
+{
+  "cleanUrls": false,
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/user/:match*",
+      "destination": "/api/user"
+    },
+    {
+      "source": "/:match*",
+      "destination": "https://thinghiemvui.basf.com/:match*"
+    }
+  ]
+}

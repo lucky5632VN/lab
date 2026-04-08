@@ -1,0 +1,17 @@
+<div id="scoreInLevel">
+    <div class="seconds">[% seconds %]</div>
+    <div class="moves">[% moves %]</div>
+    <div class="points center">
+        [% points|format() %] <span class="term" t-hidden="isFalsy(terms.points)">[% terms.points %]</span>
+    </div>
+
+    <div class="relations drillings" t-hidden="isNot(isBonusLevel)">
+        [% drillings %]<span class="term" t-hidden="isFalsy(terms.drillings)">[% terms.drillings %]</span>
+    </div>
+    <div class="relations quadruplets" t-hidden="isNot(isBonusLevel)">
+        [% quadruplets %]<span class="term" t-hidden="isFalsy(terms.quadruplets)">[% terms.quadruplets %]</span>
+    </div>
+    <div class="relations quintuplets" t-hidden="isNot(isBonusLevel)">
+        [% quintuplets %]<span class="term" t-hidden="isFalsy(terms.quintuplets)">[% terms.quintuplets %]</span>
+    </div>
+</div>
